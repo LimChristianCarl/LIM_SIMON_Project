@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.christiancarl.schedgie.HomePage"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textColor="#d2230b"
+        android:textSize="30dp"
+        android:fontFamily="graphik"
+        android:textAlignment="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <LinearLayout>
+
+        <Button
+            android:id="@+id/btn_addNotes"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:onClick="btn_addNotes"
+            android:background="@color/colorPrimary"
+            android:drawableBottom="@drawable/notes"/>
+
+        <Button
+            android:id="@+id/btn_Schedule"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="right"
+            android:onClick="btn_Schedule"
+            android:drawableBottom="@drawable/calendar"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+    <LinearLayout>
+
+        <Button
+            android:id="@+id/btn_addReminder"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:onClick="btn_addReminder"
+            android:drawableBottom="@drawable/clock"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/btn_Profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="right"
+            android:onClick="btn_Profile"
+            android:drawableBottom="@drawable/profile"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+</TableLayout>
